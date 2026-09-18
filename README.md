@@ -1,2 +1,2 @@
 # CS1
-Collection of HW and Projects for my CS1 @ Dartmouth
+All homework, projects, and lab assignments for CS1 @ Dartmouth
