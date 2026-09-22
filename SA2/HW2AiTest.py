@@ -2,7 +2,7 @@
 # Date: 09/18/2026
 # Purpose: Testing A.I. "DartmouthChat" if it can correctly use cs1lib to draw an image 
 
-import cs1lib                              
+import SA2.cs1lib as cs1lib                              
 
 WIDTH, HEIGHT = 800, 600                    
 
