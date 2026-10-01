@@ -12,6 +12,7 @@ x = 0
 y = WIN_SIZE
 
 def string_art():
+    
     #Makes x & y global var so they can be used for animation
     global x, y
 
@@ -20,9 +21,13 @@ def string_art():
     set_stroke_width(3)
     set_stroke_color(0, .75, 1)
 
-    #Sticks two points and draws a line between them
+    #Sticks two "thumbtacks" (points) 
     draw_point(x, y)
     draw_point(y, WIN_SIZE - x)
+
+    #Draws a line between them in color blue & smaller size so visible
+    set_stroke_width(2)
+    set_stroke_color(0, .75, 1)
     draw_line(x, y, y, WIN_SIZE - x)
 
     #To ensure drawing works on each side of window, if statement w/corresponding x & y used current side of square
