@@ -10,11 +10,16 @@ from cs1lib import *
 WIN_SIZE = 400
 x = 0
 y = WIN_SIZE
+setup = False
 
 def string_art():
-    
     #Makes x & y global var so they can be used for animation
-    global x, y
+    global x, y, setup
+
+    #Clears the canvas one time at start of animation
+    if not setup:
+        clear()
+        setup = True
 
     #Setup drawing variables
     OFFSET = 20
