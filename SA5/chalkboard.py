@@ -40,7 +40,7 @@ def draw():
     current_x = mouse_x()
     current_y = mouse_y()
     
-    #draws line between where cursor just was and currently is
+    #Draws line following cursor location
     if is_mouse_pressed():
         draw_line(old_x, old_y, current_x, current_y)
 
@@ -52,7 +52,7 @@ def chalkboard():
     if not setupstate:
         setup()
 
-    #Constantly checks and adjusts mouse (position & color)
+    #Constantly checks and adjusts position & color of mouse
     color_check()
     draw()
 
