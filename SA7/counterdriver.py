@@ -19,4 +19,13 @@ print(test1.__str__())
 test1.tick()
 print(test1.__str__())
 
-test2 = Counter(limit = 16, initial=1, min_digits=2)
+#creates second object of class counter
+test2 = Counter(limit = 16, initial=14, min_digits=3)
+
+#same tests as test 1 on this counter test2
+print(test2.get_value())
+print(test2.__str__())
+
+#tests the tick feature goes down one
+test2.tick()
+print(test2.__str__())
