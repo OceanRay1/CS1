@@ -6,10 +6,11 @@
 
 from timer import Timer
 
-#Starts the 1 hour 30 minute timer the assignment asks for
-my_timer = Timer(hours=1, minutes=30, seconds=0)
+#prints timer starting at 1:30:00 before ticking
+print(my_timer)
 
-#Runs until the timer hits 00:00:00
-while str(my_timer) != "00:00:00":
+#runs until the timer hits 00:00:00 while printing each seconds (tick)
+while my_timer.is_zero() == False:
     my_timer.tick()
     print(my_timer)
+
