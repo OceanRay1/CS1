@@ -30,8 +30,15 @@ def main():
     earth_moon.update(TIMESTEP * TIME_SCALE)
 
 
-earth = Body(5.9736e24, 0, 0, 0, 0, 24, 0, 0, 1)            # blue earth
-moon = Body(7.3477e22, 3.84403e8, 0, 0, 1022, 4, 1, 1, 1)   # white moon
-earth_moon = System([earth, moon])
+##All bodies & values from Prof. Campbell Canvas announcement
+# added jupiter and -778.5 reduced to -678.9 for fun
+# from https://nssdc.gsfc.nasa.gov/planetary/factsheet/
+sun = Body(1.98892e30, 0, 0, 0, 0, 15, 1, 1, 0)  # yellow sun
+mercury = Body(0.33e24, -57.9e9, 0, 0, 47890, 4, 1, 0.5, 0)  # orange mercury
+venus = Body(4.87e24, -108.2e9, 0, 0, 35040, 6, 0, 1, 0)  # green venus
+earth = Body(5.9736e24, -149.6e9, 0, 0, 29790, 6, 0, 0, 1)  # blue earth
+mars = Body(0.642e24, -227.9e9, 0, 0, 24140, 6, 1, 0, 0)  # red mars
+jupiter = Body(1898e24, -678.9e9, 0, 0, 13100, 8, 1, 0, 1)  # pink jupiter
+earth_moon = System([sun, mercury, venus, earth, mars, jupiter])
 
 start_graphics(main, 2400, framerate=FRAMERATE)
